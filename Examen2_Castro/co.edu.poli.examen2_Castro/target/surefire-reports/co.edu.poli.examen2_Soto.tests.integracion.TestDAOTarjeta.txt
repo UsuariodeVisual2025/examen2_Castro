@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.332 s <<< FAILURE! -- in co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.create_credito_y_readone -- Time elapsed: 0.287 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTarjeta.create(DAOTarjeta.java:18)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.create_credito_y_readone(TestDAOTarjeta.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.readone_noExiste -- Time elapsed: 0.014 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTarjeta.readone(DAOTarjeta.java:58)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.readone_noExiste(TestDAOTarjeta.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.create_debito_y_readone -- Time elapsed: 0.010 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTarjeta.create(DAOTarjeta.java:18)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTarjeta.create_debito_y_readone(TestDAOTarjeta.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

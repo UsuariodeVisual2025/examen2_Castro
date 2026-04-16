@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! -- in co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_objetosValidos -- Time elapsed: 0.011 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTitular.readall(DAOTitular.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_objetosValidos(TestDAOTitular.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_noDebeRetornarNull -- Time elapsed: 0.010 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTitular.readall(DAOTitular.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_noDebeRetornarNull(TestDAOTitular.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_listaInicializada -- Time elapsed: 0.010 s <<< ERROR!
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.<init>(ConexionBD.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.ConexionBD.getInstancia(ConexionBD.java:31)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.servicios.DAOTitular.readall(DAOTitular.java:26)
+	at co.edu.poli.examen2_Soto/co.edu.poli.examen2_Soto.tests.integracion.TestDAOTitular.readAll_listaInicializada(TestDAOTitular.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

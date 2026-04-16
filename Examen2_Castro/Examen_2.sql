@@ -1,0 +1,1 @@
+SELECT * FROM examen2_castro.inmueble;
